@@ -10,7 +10,8 @@ def smallestIndex(arr): # finds the smallest index in an array
 def selectionSort(arr):
     sorted = [] 
     for i in range(len(arr)):
-        sorted.append(arr.pop(smallestIndex(arr)))
+        minVal = smallestIndex(arr)
+        sorted.append(arr.pop(minVal))
     return sorted
 
 print(selectionSort([0, 7, 3, 2, 9, 1]))
