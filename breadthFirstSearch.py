@@ -26,7 +26,7 @@ def search(name):
     while search_queue:  # while the queue isn't empty
         person = search_queue.popleft()  # grab the first person off the queue
         print(searched)
-        if person not in searched:
+        if person not in searched: # verify that the person has not been searched already
             if person_is_seller(person):
                 print(person + " is a mango seller!")
                 return True
