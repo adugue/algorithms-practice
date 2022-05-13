@@ -7,10 +7,6 @@ stations["kthree"] = set(["or", "nv", "ca"])
 stations["kfour"] = set(["nv", "ut"])
 stations["kfive"] = set(["ca", "az"])
 
-
-# print(states_needed)
-# print(stations)
-
 # greedy algorithm to find a solution
 final_stations = set()
 
@@ -24,7 +20,6 @@ while states_needed: # while there are still uncovered states
         if len(still_uncovered) > len(states_covered):
             best_station = station
             states_covered = still_uncovered
-            print(states_covered)
 
     # add best station to final_stations set
     final_stations.add(best_station)
